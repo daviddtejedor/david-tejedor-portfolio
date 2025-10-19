@@ -7,7 +7,7 @@ import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
 import { IoIosRocket } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { RiBrain2Line } from "react-icons/ri";
-import { zinclas, adox, api, mp, pos, contactoBG, inicioBG } from "../assets/background/index.bg";
+import { zinclas, adox, api, mp, pos, contactoBG, inicioBG, proyectoBG, sobreMiBG } from "../assets/background/index.bg";
 export default function Home() {
   return (
     <>
@@ -54,7 +54,7 @@ export default function Home() {
                 viewport={{ once: false, amount: 0.8 }}
                 transition={{ duration: 0.5 }}
               >
-                <CardSkill hasHeader title="SOFTWARE SKILLS" HeaderIcon={IoIosRocket} bgImage={inicioBG.src}>
+                <CardSkill hasHeader title="SOFTWARE SKILLS" HeaderIcon={IoIosRocket} bgImage={proyectoBG.src}>
                   <Skill variant="software" />
                 </CardSkill>
               </motion.div>
@@ -66,7 +66,7 @@ export default function Home() {
                 viewport={{ once: false, amount: 0.8 }}
                 transition={{ duration: 0.5 }}
               >
-                <CardSkill hasHeader title="SOFT SKILLS" HeaderIcon={RiBrain2Line} bgImage={inicioBG.src}>
+                <CardSkill hasHeader title="SOFT SKILLS" HeaderIcon={RiBrain2Line} bgImage={contactoBG.src}>
                   <Skill variant="soft" />
                 </CardSkill>
               </motion.div>
@@ -87,7 +87,7 @@ export default function Home() {
                     <div className="flex flex-col md:flex-row gap-3 md:gap-6">
                       <Btn
                         title="Descargar CV"
-                        href="/public/CV_David_Tejedor.pdf"
+                        href="/CV_David_Tejedor.pdf"
                         isDownload
                       />
 
@@ -129,7 +129,7 @@ export default function Home() {
                 transition={{ duration: 0.5 }}
               >
                 <h3 className="text-center text-2xl font-inter font-light text-white mb-2">Frontend</h3>
-                <CardSkill HeaderIcon={IoIosRocket} bgImage={inicioBG.src}>
+                <CardSkill HeaderIcon={IoIosRocket} bgImage={proyectoBG.src}>
                   <Skill variant="front" MeOrSkill="skill" />
                 </CardSkill>
               </motion.div>
