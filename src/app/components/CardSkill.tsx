@@ -8,7 +8,7 @@ type CardSkillProps = {
     children?: React.ReactNode;
 }
 
-export default function CardSkill({ variant = "default", hasHeader, children, HeaderIcon, title, bgImage }: CardSkillProps) {
+export default function CardSkill({ hasHeader, children, HeaderIcon, title, bgImage }: CardSkillProps) {
 
     const Header = hasHeader ? (
         <div className="flex flex-row items-center place-content-between px-2 mb-6">

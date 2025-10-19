@@ -86,7 +86,7 @@ export default function Home() {
                   <div className="flex flex-col items-center text-center gap-6">
                     <p className="text-white/80 text-sm md:text-lg max-w-xl text-pretty">
                       Si buscas <span className="font-semibold text-white">potenciar tu proyecto</span> o negocio,
-                      descarga mi CV completo o presiona "Comenzar Ahora" para iniciar una conversación rápida.
+                      descarga mi CV completo o presiona 'Comenzar Ahora' para iniciar una conversación rápida.
                     </p>
                     <div className="flex flex-col md:flex-row gap-3 md:gap-6">
                       <Btn

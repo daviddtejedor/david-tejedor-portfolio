@@ -1,5 +1,6 @@
 import { allSkillsData } from "@/app/data/allSkillsData";
 import { motion } from "framer-motion";
+import { ElementType } from "react";
 
 type SkillProps = {
     variant: "soft" | "software" | "front" | "back";
@@ -7,7 +8,7 @@ type SkillProps = {
 };
 
 export default function Skill({ variant, MeOrSkill = "me" }: SkillProps) {
-    let typeSkills: { icon: any; name: string }[] | undefined;
+    let typeSkills: { icon: ElementType; name: string }[] | undefined;
 
     if (variant === "soft") {
         typeSkills = allSkillsData.find(group => group.groupName === "Skills Soft")?.items;
