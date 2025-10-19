@@ -1,0 +1,29 @@
+.neon-button {
+    position: relative;
+    background: linear-gradient(90deg, rgba(237, 50, 42, 0.3), rgba(36, 9, 11, 0.3));
+    box-shadow: 0 0 2px rgba(218, 24, 24, 1), 0 0 10px rgba(218, 24, 24, 0.5);
+    transition: background 0.4s ease, box-shadow 0.4s ease;
+
+}
+
+.neon-button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #A61515, #FFFFFF);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    z-index: -1;
+    transition: background 0.4s ease, box-shadow 0.4s ease;
+
+}
+
+.neon-button:hover {
+    background: linear-gradient(90deg, rgba(237, 50, 42, 0.5), rgba(36, 9, 11, 0.5));
+    box-shadow: 0 0 5px rgba(218, 24, 24, 1), 0 0 10px rgba(218, 24, 24, 0.8), 0 0 10px rgba(218, 24, 24, 0.4);
+}
