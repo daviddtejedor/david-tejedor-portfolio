@@ -12,12 +12,8 @@ export default function Home() {
   return (
     <>
       <main>
-        <section id="inicio" className="relative"
-          style={{
-            backgroundImage: `url(${inicioBG.src})`, backgroundSize: "100% 100%",
-            backgroundRepeat: "no-repeat", backgroundPosition: "center",
-          }}
-        >
+        <section id="inicio" className="relative">
+          <Image src={inicioBG} alt="Fondo de la sección Inicio" quality={80} fill priority sizes="(100% 100%)" style={{ zIndex: -1 }} />
           <div className="relative min-h-screen flex flex-col items-center justify-center ">
             <SplitText text="Programador Fullstack" className="text-[10px] md:text-xs font-inter font-light text-white/70 tracking-[0.2em] uppercase" />
 
@@ -91,7 +87,7 @@ export default function Home() {
                     <div className="flex flex-col md:flex-row gap-3 md:gap-6">
                       <Btn
                         title="Descargar CV"
-                        href="/assets/CV_David_Tejedor.pdf"
+                        href="/public/CV_David_Tejedor.pdf"
                         isDownload
                       />
 
