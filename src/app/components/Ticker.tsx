@@ -62,7 +62,7 @@ export default function Ticker({ reverse = false }: TickerProps) {
                     <div
                         key={idx}
                         // Clases para el estilo de cada ítem
-                        className="neon-ticker px-6 py-1.5 mr-4 rounded-lg text-sm flex-shrink-0"
+                        className="neon-ticker px-6 py-1.5 mr-4 rounded-lg text-md flex-shrink-0"
                     >
                         {item}
                     </div>

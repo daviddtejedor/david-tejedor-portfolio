@@ -2,7 +2,7 @@
     position: relative;
     background: linear-gradient(360deg, rgba(150, 150, 150, 0.2), rgba(0, 0, 0, 0));
     box-shadow: 0 0 2px rgba(255, 255, 255, 1), 0 0 2px rgba(255, 255, 255, 0.5);
-    transition: background 0.4s ease, box-shadow 0.4s ease;
+    transition: background 0.5s ease, box-shadow 0.5s ease, transform 0.5s ease;
 }
 
 .neon-ticker::before {
@@ -19,4 +19,19 @@
     mask-composite: exclude;
     z-index: -1;
     transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+.neon-ticker:hover {
+    /* 1. Aumentamos el resplandor para que se "encienda" */
+    box-shadow:
+        0 0 4px rgba(255, 255, 255, 1),
+        /* Borde más nítido */
+        0 0 10px rgba(255, 255, 255, 0.7);
+    /* Resplandor más difuso */
+
+    /* 2. Añadimos un pequeño movimiento de elevación para dar interactividad */
+    transform: translateY(-2px);
+
+    /* 3. El fondo puede volverse sutilmente más visible */
+    background: linear-gradient(360deg, rgba(180, 180, 180, 0.25), rgba(0, 0, 0, 0.05));
 }

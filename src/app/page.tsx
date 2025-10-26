@@ -15,7 +15,7 @@ export default function Home() {
         <section id="inicio" className="relative">
           <Image src={inicioBG} alt="Fondo de la sección Inicio" quality={80} fill priority sizes="(100% 100%)" style={{ zIndex: -1 }} />
           <div className="relative min-h-screen flex flex-col items-center justify-center ">
-            <SplitText text="Programador Fullstack" className="text-[10px] md:text-xs font-inter font-light text-white/70 tracking-[0.2em] uppercase" />
+            <SplitText text="Desarrollador Fullstack" className="text-[10px] md:text-xs font-inter font-light text-white/70 tracking-[0.2em] uppercase" />
 
             <h1 className=" text-6xl text-center md:text-8xl font-mont font-extrabold text-white leading-none uppercase">
               David Tejedor
@@ -41,8 +41,8 @@ export default function Home() {
                 viewport={{ once: false, amount: 0.8 }}
                 transition={{ duration: 0.5 }}
               >
-                <h3 className="w-3/4 text-2xl md:text-6xl font-inter font-bold">Programador Fullstack</h3>
-                <h4 className="text-inter text-[10px] md:text-md font-normal text-white/50 mt-2 md:mt-8 text-pretty">
+                <h3 className="w-3/4 text-2xl md:text-6xl font-inter font-bold">Desarrollador Fullstack</h3>
+                <h4 className="text-inter text-[10px] md:text-lg font-normal text-white/50 mt-2 md:mt-8 text-pretty">
                   Enfocado en entregar resultados funcionales que aporten valor real a proyectos y negocios.
                 </h4>
               </motion.div>
@@ -54,7 +54,7 @@ export default function Home() {
                 viewport={{ once: false, amount: 0.8 }}
                 transition={{ duration: 0.5 }}
               >
-                <CardSkill hasHeader title="SOFTWARE SKILLS" HeaderIcon={IoIosRocket} bgImage={proyectoBG.src}>
+                <CardSkill hasHeader title="SOFTWARE" HeaderIcon={IoIosRocket} bgImage={proyectoBG.src}>
                   <Skill variant="software" />
                 </CardSkill>
               </motion.div>
@@ -66,7 +66,7 @@ export default function Home() {
                 viewport={{ once: false, amount: 0.8 }}
                 transition={{ duration: 0.5 }}
               >
-                <CardSkill hasHeader title="SOFT SKILLS" HeaderIcon={RiBrain2Line} bgImage={contactoBG.src}>
+                <CardSkill hasHeader title="HABILIDADES PERSONALES" HeaderIcon={RiBrain2Line} bgImage={contactoBG.src}>
                   <Skill variant="soft" />
                 </CardSkill>
               </motion.div>
@@ -167,7 +167,7 @@ export default function Home() {
           <div className="relative w-full mx-auto grid grid-cols-1 md:grid-cols-1 gap-y-20 ">
             <CardProject
               variant="der" number="1" title="zinclas" image={zinclas}
-              description="Gestion de Tareas Administrativas + Chat Interno."
+              description={<span>Gestion de Tareas Administrativas + Chat Interno.<br />[Ganador ExpoProyecto 2025 - UNLaM]</span>}
             />
             <CardProject
               variant="izq" number="2" title="CRUD PAGE" image={adox}
@@ -182,7 +182,7 @@ export default function Home() {
               description="Integración de la API de Mercado Pago para compras online."
             />
             <CardProject
-              variant="der" number="5" title="POS SOFTWARE" image={pos}
+              variant="der" number="5" title="CHACAMARKET" image={pos}
               description="Solución pensada para kioscos: cobranzas fáciles, control de artículos, 
                 proveedores y cierre de caja, todo en un mismo lugar."
             />

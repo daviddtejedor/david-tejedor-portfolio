@@ -9,7 +9,7 @@ type Props = {
     variant?: "izq" | "der";
     number: string;
     title: string;
-    description: string;
+    description: React.ReactNode;
     image: StaticImageData;
 };
 
@@ -79,7 +79,7 @@ export default function CardProject({ variant = "izq", number, title, descriptio
                 className={`w-full md:w-3/4 flex flex-col justify-center h-full ${isTextOnLeft ? "text-left items-start" : "text-right items-end"}`}
             >
                 <span className="text-[#960000] text-lg font-medium font-mont mb-2"># {number}</span>
-                <h2 className="text-white text-5xl md:text-7xl font-bold font-mont mb-2 leading-tight uppercase">{title}</h2>
+                <h2 className="text-white text-4xl md:text-7xl font-bold font-mont mb-2 leading-tight uppercase">{title}</h2>
                 <p className="text-white/80 font-inter font-light text-sm max-w-xl mb-5">{description}</p>
                 <Btn
                     title="contactame"
