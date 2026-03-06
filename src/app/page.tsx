@@ -87,7 +87,7 @@ export default function Home() {
                     <div className="flex flex-col md:flex-row gap-3 md:gap-6">
                       <Btn
                         title="Descargar CV"
-                        href="/CV_David_Tejedor.pdf"
+                        href="/David-Tejedor-CV.pdf"
                         isDownload
                       />
 
