@@ -1,7 +1,8 @@
 
 import {
     SiTypescript, SiJavascript, SiPhp, SiMysql, SiMongodb, SiHtml5, SiCss3, SiTailwindcss, SiFramer,
-    SiBootstrap, SiFigma, SiAdobephotoshop, SiAdobeillustrator
+    SiBootstrap, SiFigma, SiAdobephotoshop, SiAdobeillustrator,
+    SiPostgresql
 } from "react-icons/si";
 
 
@@ -19,6 +20,7 @@ export const allSkillsData = [
             { icon: FaNodeJs, name: 'Node.Js' },
             { icon: TbBrandCSharp, name: 'C Sharp' },
             { icon: SiPhp, name: 'Php' },
+            { icon: SiPostgresql, name: 'Postgresql' },
             { icon: SiMysql, name: 'Mysql' },
             { icon: SiMongodb, name: 'MongoDB' },
             { icon: DiMsqlServer, name: 'Sql Server' },
@@ -41,7 +43,7 @@ export const allSkillsData = [
     {
         groupName: 'Skills Software',
         items: [
-            { icon: BiLogoVisualStudio, name: 'Visual Studio Code' },
+            { icon: BiLogoVisualStudio, name: 'VS Code' },
             { icon: DiVisualstudio, name: 'Visual Studio' },
             { icon: SiFigma, name: 'Figma' },
             { icon: SiAdobephotoshop, name: 'Photoshop' },

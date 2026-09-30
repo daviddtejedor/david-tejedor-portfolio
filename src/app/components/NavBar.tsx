@@ -18,23 +18,25 @@ const SlideTabs = () => {
     });
 
     return (
-        <ul
-            onMouseLeave={() => {
-                setPosition((pv) => ({
-                    ...pv,
-                    opacity: 0,
-                }));
-            }}
-            className="relative flex w-fit rounded-full border border-white bg-black/60 backdrop-blur-xs p-0.5 md:p-1"
-        >
-            <Tab setPosition={setPosition} href="#inicio">Inicio</Tab>
-            <Tab setPosition={setPosition} href="#sobre_mi">Sobre Mi</Tab>
-            <Tab setPosition={setPosition} href="#habilidades">Habilidades</Tab>
-            <Tab setPosition={setPosition} href="#proyectos">Proyectos</Tab>
-            <Tab setPosition={setPosition} href="#contacto">Contacto</Tab>
+        <header>
+            <ul
+                onMouseLeave={() => {
+                    setPosition((pv) => ({
+                        ...pv,
+                        opacity: 0,
+                    }));
+                }}
+                className="relative flex w-fit rounded-full border border-white bg-black/60 backdrop-blur-xs p-0.5 md:p-1"
+            >
+                <Tab setPosition={setPosition} href="#inicio">Inicio</Tab>
+                <Tab setPosition={setPosition} href="#sobre_mi">Sobre Mi</Tab>
+                <Tab setPosition={setPosition} href="#habilidades">Habilidades</Tab>
+                <Tab setPosition={setPosition} href="#proyectos">Proyectos</Tab>
+                <Tab setPosition={setPosition} href="#contacto">Contacto</Tab>
 
-            <Cursor position={position} />
-        </ul>
+                <Cursor position={position} />
+            </ul>
+        </header>
     );
 };
 
@@ -85,7 +87,7 @@ const Cursor = ({ position }: { position: Position }) => {
             initial={{ opacity: 0 }}
             animate={position}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            className="absolute z-0 h-[20px] md:h-7 rounded-full bg-white" />
+            className="absolute z-0 h-5 md:h-7 rounded-full bg-white" />
     );
 };
 
