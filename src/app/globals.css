@@ -20,3 +20,16 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* Ocultar barra de scroll globalmente */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  -ms-overflow-style: none;
+  /* IE y Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
