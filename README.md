@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Portfolio Personal — David Tejedor
 
-## Getting Started
+**Desarrollador Fullstack**
 
-First, run the development server:
+![Vista previa del portfolio](./src/app/opengraph-image.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+🌐 [Ver sitio web en vivo](https://david-tejedor-portfolio.vercel.app)
+
+## Sobre el proyecto
+
+Este repositorio contiene mi sitio web personal y portfolio profesional, diseñado para presentar mis proyectos, habilidades y trayectoria como Desarrollador Fullstack.
+
+El proyecto utiliza Next.js 16 (App Router) y Tailwind CSS v4, priorizando la velocidad de carga, el tipado estático con TypeScript y una experiencia visual moderna con estética oscura.
+
+## Tecnologías y herramientas
+
+- **Framework:** Next.js 16 (App Router y Turbopack)
+- **Lenguaje:** TypeScript
+- **Estilos y diseño:** Tailwind CSS v4
+- **Despliegue y CI/CD:** Vercel
+- **Linter y calidad:** ESLint 9
+
+## ✨ Características principales
+
+- **Rendimiento optimizado:** páginas generadas estáticamente para una carga ultrarrápida.
+- **Diseño responsive:** adaptación nativa a cualquier tamaño de pantalla.
+- **Open Graph automatizado:** tarjeta de presentación personalizada (`opengraph-image.png`) para redes sociales, LinkedIn y WhatsApp.
+- **UI limpia:** navegación fluida y scroll personalizado sin barras visibles.
+
+## Estructura del proyecto
+
+```
+david-tejedor-portfolio/
+├── public/                     # Archivos estáticos
+└── src/
+    ├── app/                    # Rutas y configuración de la app (App Router)
+    │   ├── components/         # Componentes de UI reutilizables
+    │   ├── favicon.ico
+    │   ├── globals.css         # Estilos globales y utilidades de Tailwind v4
+    │   ├── layout.tsx          # Layout principal y metadata global
+    │   ├── opengraph-image.png # Vista previa para Open Graph
+    │   └── page.tsx            # Página principal
+    ├── assets/                 # Recursos multimedia e imágenes internas
+    ├── config/                 # Variables y datos de configuración global
+    └── data/                   # Información sobre proyectos, habilidades y logros
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 💻 Instalación y ejecución local
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Si querés clonar y ejecutar este proyecto localmente:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clonar el repositorio:
 
-## Learn More
+   ```bash
+   git clone https://github.com/daviddtejedor/david-tejedor-portfolio.git
+   cd david-tejedor-portfolio
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Instalar dependencias:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Iniciar el servidor de desarrollo:
 
-## Deploy on Vercel
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Abrir `http://localhost:3000` en el navegador.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📬 Contacto
+
+**Disponible para proyectos freelance.**
+
+- LinkedIn: [David Tejedor](https://www.linkedin.com/in/daviddtejedor)
+- GitHub: [@daviddtejedor](https://github.com/daviddtejedor)
+- Instagram: [@daviddtejedor](https://www.instagram.com/daviddtejedor)
+- Email: davidtejedor10@gmail.com

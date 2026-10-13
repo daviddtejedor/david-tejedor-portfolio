@@ -12,7 +12,8 @@ export const SITE_CONFIG = {
         instagram: "https://www.instagram.com/daviddtejedor",
     },
     repo: {
-        repoX: "https://github.com/daviddtejedor/...",
+        Portfolio: "https://github.com/daviddtejedor/david-tejedor-portfolio",
+        AccessPass: "https://github.com/daviddtejedor/access-pass-system"
     },
     demos: {
         demoX: "https.//...",

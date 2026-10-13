@@ -5,6 +5,7 @@ import PS3Background from "./components/ui/PS3Background";
 import { NavBar, Footer } from "./components/index.components";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://david-tejedor-portfolio.vercel.app"),
   title: "David Tejedor | Desarrollador Fullstack",
   description: "Portafolio profesional de David Tejedor",
   openGraph: {

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaCopy, FaCheck } from "react-icons/fa6";
-import { FiMapPin } from "react-icons/fi";
+import { FiGitBranch, FiMapPin } from "react-icons/fi";
 import { Network } from "@/app/components/ui/index.ui";
 import { SITE_CONFIG as cfg } from "@/config";
 
@@ -86,13 +86,13 @@ export default function Footer() {
 
                     {/* Repo Open Source */}
                     <a
-                        href="https://github.com/daviddtejedor"
+                        href={cfg.repo.Portfolio}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-1.5 text-[11px] font-mono text-gray-500 hover:text-gray-300 transition-colors"
                     >
-                        {/* <FiGitBranch className="text-xs text-red-500" />
-                        <span>código fuente en GitHub</span> */}
+                        <FiGitBranch className="text-xs text-red-500" />
+                        <span>código fuente en GitHub</span>
                     </a>
                 </div>
 
